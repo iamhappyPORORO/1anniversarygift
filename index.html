@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>골라골라선물</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./background.png");
+        background-size: cover;
+        height: 50%;
+        width: 50%;
+      }
+
+
+      .header {
+        width: 100%;
+        height: 5%;
+        background-color: #ffc107;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        margin-bottom: 30px;
+      }
+
+      h1 {
+        font-size: 36px;
+        color: #fff;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .box {
+        margin top: 100px;
+        border: 2px solid white;
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        font-weight: bold;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+      }
+
+      .box1 {
+        background-image: url("./선물상자.png");
+      }
+
+      .box2 {
+        background-image: url("./선물상자2.png");
+      }
+
+      .box3 {
+        background-image: url("./선물상자3.png");
+      }
+
+      .box4 {
+        background-image: url("./선물상자.png");
+      }
+
+      .box5 {
+        background-image: url("./하트.jpg");
+      }
+
+
+      .box-text {
+        margin-bottom: 10px;
+        font-size: 0px;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>골라 골라 1주년 선물</h1>
+    </div>
+    <div class="container">
+      <div class="box box1" onclick="changeImage(this)">
+        <div class="box-text">Box 1</div>
+      </div>
+      <div class="box box2" onclick="changeImage(this)">
+        <div class="box-text">Box 2</div>
+      </div>
+      <div class="box box3" onclick="changeImage(this)">
+        <div class="box-text">Box 3</div>
+      </div>
+      <div class="box box4" onclick="changeImage(this)">
+        <div class="box-text">Box 4</div>
+      </div>
+      <div class="box box5" onclick="alert('여기까진 내가 생각한 쵸비 컬렉션였고, 1주년 동안 쵸비를 만나면서 쵸비돈으론 안사지만 내가 사주면 좋아할 것이라는 생각에 준비했어. 나 여행갔다와서 다음에 만날 때 내가 준비한 선물을 만들러 갈 예정이야. 내가 커플링에 덮어버린 안좋은 과거가 있지만, 정말 정말 사랑하는 사람 만나면 꼭 이런거 만들어 보고싶었다고! 아무래도 쵸비랑 만들면 아주 좋은 추억으로 남길 수 있을 것 같아! 나와 함께 만들러 가지 않을래? 커플링? 거의 모태솔로이던 중학교 시절 정말 행복하게 오래 만날 남자친구와 한번쯤은 만들고 싶었던 커플링 25살에 만들어보려고 해😘 동참해주었으면 해! 이게 나의 1주년 선물이야🎀.')">
+        <div class="box-text">Box 5</div>
+      </div>
+      <div class="box box5" onclick="changeImage(this)">
+        <div class="box-text">Box 5</div>
+      </div>
+
+    <script>
+      function changeImage(element) {
+        if (element.classList.contains("box1")) {
+          element.style.backgroundImage = "url('./애플워치 스트랩.PNG')";
+        } else if (element.classList.contains("box2")) {
+          element.style.backgroundImage = "url('./베이블레이드.jpg')";
+        } else if (element.classList.contains("box3")) {
+          element.style.backgroundImage = "url('./꽝.jpg')";
+        } else if (element.classList.contains("box4")) {  
+          element.style.backgroundImage = "url('./무지개연.jpg')";
+        } else if (element.classList.contains("box5")) 
+          element.style.backgroundImage = "url('./커플링.jpg')";
+        }
+    </script>
+  </body>
+</html>
+
